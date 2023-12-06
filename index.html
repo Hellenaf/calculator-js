@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+        <h1>Calculator</h1>
+
+        <div class="calc">
+            <!-- Multiplication -->
+            <input type="number" name="txtn1" id="txtn1"> x
+            <input type="number" name="txtn2" id="txtn2">
+            <input type="button" value="=" onclick="multiply()">
+            <div id='multi' class="result">...</div>
+
+            <!-- Division -->
+            <input type="number" name="txtn3" id="txtn3"> /
+            <input type="number" name="txtn4" id="txtn4">
+            <input type="button" value="=" onclick="divide()">
+            <div id='divi' class="result">...</div>
+
+            <!-- Addition -->
+            <input type="number" name="txtn5" id="txtn5"> +
+            <input type="number" name="txtn6" id="txtn6">
+            <input type="button" value="=" onclick="add()">
+            <div id='som' class="result">...</div>
+
+            <!-- Subtraction -->
+            <input type="number" name="txtn7" id="txtn7"> -
+            <input type="number" name="txtn8" id="txtn8">
+            <input type="button" value="=" onclick="subtract()">
+            <div id='sub' class="result">...</div>
+
+            <!-- Potency -->
+            <input type="number" name="txtn9" id="txtn9"> **
+            <input type="number" name="txtn10" id="txtn10">
+            <input type="button" value="=" onclick="power()">
+            <div id='poten' class="result">...</div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>
